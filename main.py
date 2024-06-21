@@ -5,7 +5,7 @@ import seaborn as sns
 import matplotlib.pyplot as plt
 
 
-@st.cache
+@st.cache_data
 def load_data():
     df = sns.load_dataset("tips")
     return df
